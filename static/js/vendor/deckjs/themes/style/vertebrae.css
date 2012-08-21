@@ -12,7 +12,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 20px;
-  z-index: 2;
+  z-index: 1;
   font-family: 'haettenschweiler', 'impact', arial, sans-serif;
   font-size: 36em;
   line-height: 1em;
@@ -27,7 +27,7 @@ body {
   right: -132px;
   width: 493px;
   height: 436px;
-  z-index: 1;
+  z-index: 2;
   background-image: url("/static/img/vertebrae.png");
 }
 .ribbon {
@@ -45,6 +45,9 @@ body {
 }
 .deck-container {
   z-index: 3;
+}
+.slide {
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 .slide h1,
 .slide h2,
@@ -82,4 +85,5 @@ body {
   border: 3px solid #fff;
   -webkit-border-radius: 3px;
   border-radius: 3px;
+  background-color: rgba(152,152,152,0.5);
 }
