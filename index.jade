@@ -1,0 +1,90 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    meta(name='viewport', content='width=1024, user-scalable=no')
+    title='Vertebrae: A Backbone Grab Bag'
+
+    link(rel='stylesheet', href='static/js/vendor/deckjs/core/deck.core.css')
+
+    // Extension CSS files go here. Remove or add as needed.
+    link(rel='stylesheet', href='static/js/vendor/deckjs/extensions/goto/deck.goto.css')
+    link(rel='stylesheet', href='static/js/vendor/deckjs/extensions/menu/deck.menu.css')
+    link(rel='stylesheet', href='static/js/vendor/deckjs/extensions/navigation/deck.navigation.css')
+    link(rel='stylesheet', href='static/js/vendor/deckjs/extensions/status/deck.status.css')
+    link(rel='stylesheet', href='static/js/vendor/deckjs/extensions/hash/deck.hash.css')
+    link(rel='stylesheet', href='static/js/vendor/deckjs/extensions/scale/deck.scale.css')
+
+    link(rel='stylesheet', href='static/js/vendor/deckjs/themes/transition/horizontal-slide.css')
+    link(rel='stylesheet', href='static/js/vendor/deckjs/themes/style/vertebrae.css')
+
+    script(src='static/js/vendor/modernizr.custom.js')
+
+  body
+
+    h1.watermark.
+      L1
+
+    div.deck-container
+
+      section.slide(id='L1')
+        h2='Make Views Reusable'
+        div.content
+          p
+            Pass in the "el" attribute
+          div.half
+            h3='Before'
+            pre
+              code.
+                var MyView = Backbone.View.extend({
+                  el: ‘#putHere’
+                });
+                new MyView();
+          div.half
+            h3='After'
+            pre
+              code.
+                var MyView = Backbone.View.extend({});
+                new MyView({
+                  el: ‘#putHere’
+                });
+
+      section.slide(id='L2')
+        h1='Content'
+
+      section.slide(id='L3')
+        h1='Here'
+
+      a(href='#', class='deck-prev-link', title='Previous')='&#8592;'
+      a(href='#', class='deck-next-link', title='Next')='&#8594;'
+
+      // p.dec-status
+        span.deck-status-current
+        /
+        span.deck-status-total
+
+      form.goto-form(action='.', method='get')
+        label(for='goto-slide')='Go to slide:'
+        input(type='text', name='slidenum', id='goto-slide', list='goto-datalist')
+        datalist(id='goto-datalist')
+        input(type='submit', value='Go')
+
+      a.deck-permalink(href='.', title='Permalink to this slide')='#'
+
+    script(src='static/js/vendor/jquery-1.7.2.min.js')
+    script(src='static/js/vendor/deckjs/core/deck.core.js')
+
+    script(src='static/js/vendor/deckjs/core/deck.core.js')
+    script(src='static/js/vendor/deckjs/extensions/hash/deck.hash.js')
+    script(src='static/js/vendor/deckjs/extensions/menu/deck.menu.js')
+    script(src='static/js/vendor/deckjs/extensions/goto/deck.goto.js')
+    script(src='static/js/vendor/deckjs/extensions/status/deck.status.js')
+    script(src='static/js/vendor/deckjs/extensions/navigation/deck.navigation.js')
+    script(src='static/js/vendor/deckjs/extensions/scale/deck.scale.js')
+    script(src='static/js/vendor/deckjs/extensions/pretties/deck.pretties.js')
+
+    script
+      $(function() {
+        $.deck('.slide');
+      });

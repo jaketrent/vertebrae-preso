@@ -5,8 +5,24 @@
   font-weight: normal;
   font-style: normal;
 }
-.deck-container {
+body {
   background: url("/static/img/bg-repeat-xy.jpg");
+}
+.watermark {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  z-index: 2;
+  font-family: 'haettenschweiler', 'impact', arial, sans-serif;
+  font-size: 36em;
+  line-height: 1em;
+  letter-spacing: 7px;
+  margin: 0;
+  padding: 0;
+  color: rgba(0,0,0,0.6);
+}
+.deck-container {
+  z-index: 3;
 }
 .slide h1,
 .slide h2,
@@ -38,6 +54,5 @@
   font-size: 30px;
 }
 .slide code {
-  white-space: pre;
-  border: 3px solid #fff;
+  overflow: auto;
 }

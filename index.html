@@ -1,121 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=1024, user-scalable=no">
-
-  <title>Vertebrae: A Backbone Grab Bag</title>
-
-  <!-- Required stylesheet -->
-  <link rel="stylesheet" href="static/js/vendor/deckjs/core/deck.core.css">
-
-  <!-- Extension CSS files go here. Remove or add as needed. -->
-  <link rel="stylesheet" href="static/js/vendor/deckjs/extensions/goto/deck.goto.css">
-  <link rel="stylesheet" href="static/js/vendor/deckjs/extensions/menu/deck.menu.css">
-  <link rel="stylesheet" href="static/js/vendor/deckjs/extensions/navigation/deck.navigation.css">
-  <link rel="stylesheet" href="static/js/vendor/deckjs/extensions/status/deck.status.css">
-  <link rel="stylesheet" href="static/js/vendor/deckjs/extensions/hash/deck.hash.css">
-  <link rel="stylesheet" href="static/js/vendor/deckjs/extensions/scale/deck.scale.css">
-
-  <!-- Style theme. More available in /themes/style/ or create your own. -->
-  <!--<link rel="stylesheet" href="static/js/vendor/deckjs/themes/style/web-2.0.css">-->
-  <!--<link rel="stylesheet" href="static/js/vendor/deckjs/themes/style/web-2.0.css">-->
-
-  <!-- Transition theme. More available in /themes/transition/ or create your own. -->
-  <link rel="stylesheet" href="static/js/vendor/deckjs/themes/transition/horizontal-slide.css">
-  <link rel="stylesheet" href="static/js/vendor/deckjs/themes/style/vertebrae.css">
-
-  <!-- Required Modernizr file -->
-  <script src="static/js/vendor/modernizr.custom.js"></script>
-</head>
-<body class="deck-container">
-
-<!-- Begin slides. Just make elements with a class of slide. -->
-
-<section class="slide">
-  <h2>Make Views Reusable</h2>
-  <div class="content">
-    <p>
-      Pass in the "el" attribute
-    </p>
-    <div class="half">
-      <h3>Before</h3>
-      <code>
-        var MyView = Backbone.View.extend({
-          el: ‘#putHere’
-        });
-        new MyView();
-      </code>
-    </div>
-    <div class="half">
-      <h3>After</h3>
-      <code>
-        var MyView = Backbone.View.extend({
-        });
-        new MyView({
-          el: ‘#putHere’
-        });
-      </code>
-    </div>
-  </div>
-</section>
-
-<section class="slide">
-  <h1>Content</h1>
-</section>
-
-<section class="slide">
-  <h1>Here</h1>
-</section>
-
-<!-- End slides. -->
-
-
-<!-- Begin extension snippets. Add or remove as needed. -->
-
-<!-- deck.navigation snippet -->
-<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
-<a href="#" class="deck-next-link" title="Next">&#8594;</a>
-
-<!-- deck.status snippet -->
-<p class="deck-status">
-  <span class="deck-status-current"></span>
-  /
-  <span class="deck-status-total"></span>
-</p>
-
-<!-- deck.goto snippet -->
-<form action="." method="get" class="goto-form">
-  <label for="goto-slide">Go to slide:</label>
-  <input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
-  <datalist id="goto-datalist"></datalist>
-  <input type="submit" value="Go">
-</form>
-
-<!-- deck.hash snippet -->
-<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
-
-<!-- End extension snippets. -->
-
-<!-- Required JS files. -->
-<script src="static/js/vendor/jquery-1.7.2.min.js"></script>
-<script src="static/js/vendor/deckjs/core/deck.core.js"></script>
-
-<!-- Extension JS files. Add or remove as needed. -->
-<script src="static/js/vendor/deckjs/core/deck.core.js"></script>
-<script src="static/js/vendor/deckjs/extensions/hash/deck.hash.js"></script>
-<script src="static/js/vendor/deckjs/extensions/menu/deck.menu.js"></script>
-<script src="static/js/vendor/deckjs/extensions/goto/deck.goto.js"></script>
-<script src="static/js/vendor/deckjs/extensions/status/deck.status.js"></script>
-<script src="static/js/vendor/deckjs/extensions/navigation/deck.navigation.js"></script>
-<script src="static/js/vendor/deckjs/extensions/scale/deck.scale.js"></script>
-
-<!-- Initialize the deck. You can put this in an external file if desired. -->
-<script>
-  $(function() {
-    $.deck('.slide');
-  });
-</script>
-</body>
-</html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="viewport" content="width=1024, user-scalable=no"><title>Vertebrae: A Backbone Grab Bag</title><link rel="stylesheet" href="static/js/vendor/deckjs/core/deck.core.css"><!-- Extension CSS files go here. Remove or add as needed.--><link rel="stylesheet" href="static/js/vendor/deckjs/extensions/goto/deck.goto.css"><link rel="stylesheet" href="static/js/vendor/deckjs/extensions/menu/deck.menu.css"><link rel="stylesheet" href="static/js/vendor/deckjs/extensions/navigation/deck.navigation.css"><link rel="stylesheet" href="static/js/vendor/deckjs/extensions/status/deck.status.css"><link rel="stylesheet" href="static/js/vendor/deckjs/extensions/hash/deck.hash.css"><link rel="stylesheet" href="static/js/vendor/deckjs/extensions/scale/deck.scale.css"><link rel="stylesheet" href="static/js/vendor/deckjs/themes/transition/horizontal-slide.css"><link rel="stylesheet" href="static/js/vendor/deckjs/themes/style/vertebrae.css"><script src="static/js/vendor/modernizr.custom.js"></script></head><body><h1 class="watermark">L1
+</h1><div class="deck-container"><section id="L1" class="slide"><h2>Make Views Reusable</h2><div class="content"><p><Pass>in the "el" attribute</Pass></p><div class="half"><h3>Before</h3><pre><code>var MyView = Backbone.View.extend({
+  el: ‘#putHere’
+});
+new MyView();</code></pre></div><div class="half"><h3>After</h3><pre><code>var MyView = Backbone.View.extend({});
+new MyView({
+  el: ‘#putHere’
+});
+</code></pre></div></div></section><section id="L2" class="slide"><h1>Content</h1></section><section id="L3" class="slide"><h1>Here</h1></section><a href="#" title="Previous" class="deck-prev-link">&#8592;</a><a href="#" title="Next" class="deck-next-link">&#8594;</a><!-- p.dec-status<span class="deck-status-current"></span>/<span class="deck-status-total"></span>--><form action="." method="get" class="goto-form"><label for="goto-slide">Go to slide:</label><input type="text" name="slidenum" id="goto-slide" list="goto-datalist"><datalist id="goto-datalist"></datalist><input type="submit" value="Go"></form><a href="." title="Permalink to this slide" class="deck-permalink">#</a></div><script src="static/js/vendor/jquery-1.7.2.min.js"></script><script src="static/js/vendor/deckjs/core/deck.core.js"></script><script src="static/js/vendor/deckjs/core/deck.core.js"></script><script src="static/js/vendor/deckjs/extensions/hash/deck.hash.js"></script><script src="static/js/vendor/deckjs/extensions/menu/deck.menu.js"></script><script src="static/js/vendor/deckjs/extensions/goto/deck.goto.js"></script><script src="static/js/vendor/deckjs/extensions/status/deck.status.js"></script><script src="static/js/vendor/deckjs/extensions/navigation/deck.navigation.js"></script><script src="static/js/vendor/deckjs/extensions/scale/deck.scale.js"></script><script src="static/js/vendor/deckjs/extensions/pretties/deck.pretties.js"></script><script>$(function() {
+  $.deck('.slide');
+});</script></body></html>
