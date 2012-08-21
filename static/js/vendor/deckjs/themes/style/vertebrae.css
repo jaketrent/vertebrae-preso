@@ -1,6 +1,42 @@
-code {
-  white-space: pre;
+@font-face {
+  font-family: 'haettenschweiler';
+  src: url("/static/type/haettenschweiler-webfont.eot");
+  src: url("/static/type/haettenschweiler-webfont.eot?#iefix") format('embedded-opentype'), url("/static/type/haettenschweiler-webfont.woff") format('woff'), url("/static/type/haettenschweiler-webfont.ttf") format('truetype'), url("/static/type/haettenschweiler-webfont.svg#haettenschweiler") format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 .deck-container {
   background: url("/static/img/bg-repeat-xy.jpg");
+  height: 90%;
+}
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
+  background: rgba(0,0,0,0.4);
+  left: 5%;
+  top: 5%;
+  width: 90%;
+}
+.slide h1,
+.slide h2,
+.slide h3 {
+  font-family: 'haettenschweiler', 'impact', arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+.slide h2 {
+  font-size: 4em;
+}
+.slide h3 {
+  font-size: 2em;
+}
+.slide .half {
+  width: 50%;
+  float: left;
+}
+.slide p {
+  font-size: 30px;
+}
+.slide code {
+  white-space: pre;
 }

@@ -66,7 +66,7 @@ works fine.
 		The numeric keycode used to toggle enabling and disabling scaling.
 
 	options.baseHeight
-		When baseHeight is falsy, as it is by default, the deck is scaled in
+		When baseHeight is falsy, as it is by default, the deck sis scaled in
 		proportion to the height of the deck container. You may instead specify
 		a height as a number of px, and slides will be scaled against this
 		height regardless of the container size.
