@@ -13,15 +13,9 @@ sans-serif()
 
 .deck-container
   background url('/static/img/bg-repeat-xy.jpg')
-  height 90%
 
 .slide
 
-  .csstransitions.csstransforms .deck-container:not(.deck-menu) > &
-    background rgba(0,0,0,.4)
-    left 5%
-    top 5%
-    width 90%
 
   h1, h2, h3
     sans-serif()
@@ -34,14 +28,22 @@ sans-serif()
   h3
     font-size 2em
 
+  .content
+    background rgba(0,0,0,.5)
+    overflow hidden
+    padding 5%
+    color #fff
+
   .half
-    width 50%
+    width 48%
     float left
+    margin-left 2%
 
   p
     font-size 30px
 
   code
-    white-space: pre
+    white-space pre
+    border 3px solid #fff
 
 

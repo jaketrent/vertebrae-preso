@@ -35,29 +35,30 @@
 
 <section class="slide">
   <h2>Make Views Reusable</h2>
-  <p>
-    Pass in the "el" attribute
-  </p>
-  <div class="half">
-    <h3>Before</h3>
-    <code>
-      var MyView = Backbone.View.extend({
-        el: ‘#putHere’
-      });
-      new MyView();
-    </code>
+  <div class="content">
+    <p>
+      Pass in the "el" attribute
+    </p>
+    <div class="half">
+      <h3>Before</h3>
+      <code>
+        var MyView = Backbone.View.extend({
+          el: ‘#putHere’
+        });
+        new MyView();
+      </code>
+    </div>
+    <div class="half">
+      <h3>After</h3>
+      <code>
+        var MyView = Backbone.View.extend({
+        });
+        new MyView({
+          el: ‘#putHere’
+        });
+      </code>
+    </div>
   </div>
-  <div class="half">
-    <h3>After</h3>
-    <code>
-      var MyView = Backbone.View.extend({
-      });
-      new MyView({
-        el: ‘#putHere’
-      });
-    </code>
-  </div>
-
 </section>
 
 <section class="slide">

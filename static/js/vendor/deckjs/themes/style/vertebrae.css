@@ -7,13 +7,6 @@
 }
 .deck-container {
   background: url("/static/img/bg-repeat-xy.jpg");
-  height: 90%;
-}
-.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide {
-  background: rgba(0,0,0,0.4);
-  left: 5%;
-  top: 5%;
-  width: 90%;
 }
 .slide h1,
 .slide h2,
@@ -30,13 +23,21 @@
 .slide h3 {
   font-size: 2em;
 }
+.slide .content {
+  background: rgba(0,0,0,0.5);
+  overflow: hidden;
+  padding: 5%;
+  color: #fff;
+}
 .slide .half {
-  width: 50%;
+  width: 48%;
   float: left;
+  margin-left: 2%;
 }
 .slide p {
   font-size: 30px;
 }
 .slide code {
   white-space: pre;
+  border: 3px solid #fff;
 }
