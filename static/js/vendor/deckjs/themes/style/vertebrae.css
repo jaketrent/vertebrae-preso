@@ -21,6 +21,28 @@ body {
   padding: 0;
   color: rgba(0,0,0,0.6);
 }
+.hex {
+  position: absolute;
+  top: -160px;
+  right: -132px;
+  width: 493px;
+  height: 436px;
+  z-index: 1;
+  background-image: url("/static/img/vertebrae.png");
+}
+.ribbon {
+  position: absolute;
+  top: 0;
+  left: -70px;
+  height: 65px;
+  width: 250px;
+  background: rgba(0,0,0,0.7);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
 .deck-container {
   z-index: 3;
 }
@@ -34,7 +56,10 @@ body {
   text-shadow: 1px 1px 3px #000;
 }
 .slide h2 {
-  font-size: 4em;
+  font-size: 5em;
+  border: 0;
+  margin: 0;
+  padding: 7px 0 20px 86px;
 }
 .slide h3 {
   font-size: 2em;
@@ -53,6 +78,8 @@ body {
 .slide p {
   font-size: 30px;
 }
-.slide code {
-  overflow: auto;
+.slide pre {
+  border: 3px solid #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
 }
