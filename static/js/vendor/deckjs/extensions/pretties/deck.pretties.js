@@ -5,7 +5,7 @@
 	$d.on('deck.change', function(e, from, to) {
 
 //		$c = $[deck]('getContainer');
-		$('.watermark').html($[deck]('getSlide', to).attr('id'));
+		$('.watermark').removeClass('animated wobble').addClass('animated wobble').html($[deck]('getSlide', to).attr('id'));
 
 	});
 

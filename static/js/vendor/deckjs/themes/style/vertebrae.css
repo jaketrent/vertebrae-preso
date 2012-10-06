@@ -20,6 +20,11 @@ body {
   margin: 0;
   padding: 0;
   color: rgba(0,0,0,0.6);
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .hex {
   position: absolute;
