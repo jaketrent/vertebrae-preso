@@ -1,13 +1,15 @@
 (function ($, deck, window) {
 	var $d = $(document);
-//	$window = $(window);
-
+  var $watermark = $('.watermark');
+  var timer;
 	$d.on('deck.change', function(e, from, to) {
 
-//		$c = $[deck]('getContainer');
-		$('.watermark').removeClass('animated wobble').addClass('animated wobble').html($[deck]('getSlide', to).attr('id'));
+    $watermark.html($[deck]('getSlide', to).attr('id'));
+
+    $watermark.removeClass('flipInY').addClass('flipInY');
+    timer = setTimeout(function () {
+      $('.watermark').removeClass('flipInY');
+    }, 1000);
 
 	});
-
-
 })(jQuery, 'deck', this);
