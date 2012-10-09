@@ -72,16 +72,28 @@ body {
 .slide h3 {
   font-size: 2em;
 }
+.slide .half {
+  width: 48%;
+  float: left;
+  margin-left: 2%;
+}
+.slide .half.collapse {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+.slide .half.expand {
+  width: 100%;
+  margin-left: 0;
+}
+.slide .half.collapse.expand {
+  width: 48%;
+}
 .slide .content {
   background: rgba(0,0,0,0.5);
   overflow: hidden;
   padding: 5%;
   color: #fff;
-}
-.slide .half {
-  width: 48%;
-  float: left;
-  margin-left: 2%;
 }
 .slide p {
   font-size: 30px;

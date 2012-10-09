@@ -48,4 +48,46 @@
     }, 1000);
 
 	});
+
+  $d.on('keydown', function (e) {
+    // [ 219 push the left to collapse under the weight of the right
+    // ] 221 push the right to collapse under the weight of the left
+    var code = e.which;
+    if (code === 219 || code === 221) {
+      var $halves = $('.half');
+      var i = 0;
+      for (i; i < $halves.length; i+=2) {
+        // assume always have 2 per page
+        var $before = $halves.eq(i);
+        var $after = $halves.eq(i + 1);
+
+        if (code === 219) {
+          // OI -> oo
+          if ($after.hasClass('collapse')) {
+            $before.removeClass('expand');
+            $after.removeClass('collapse');
+          } else {
+            // oo -> IO
+            $before.addClass('collapse');
+            $after.addClass('expand');
+          }
+          // IO -> IO
+          // nada
+        } else if (code === 221) {
+          // IO -> oo
+          if ($before.hasClass('collapse')) {
+            $before.removeClass('collapse');
+            $after.removeClass('expand');
+          } else {
+            // oo -> OI
+            $before.addClass('expand');
+            $after.addClass('collapse');
+          }
+          // OI -> OI
+          // nada
+        }
+      }
+    }
+  });
+
 })(jQuery, 'deck', this);
