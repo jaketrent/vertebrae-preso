@@ -85,6 +85,11 @@ body {
 .slide .half.expand {
   width: 100%;
   margin-left: 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 .slide .half.collapse.expand {
   width: 48%;
@@ -118,4 +123,8 @@ body {
 .slide .credits {
   list-style: none;
   text-align: right;
+}
+.deck-prev-link,
+.deck-next-link {
+  display: none;
 }
