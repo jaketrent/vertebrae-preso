@@ -120,6 +120,9 @@ body {
 .slide pre.big {
   font-size: 2em;
 }
+.slide .more {
+  font-size: 3em;
+}
 .slide .credits {
   list-style: none;
   text-align: right;
